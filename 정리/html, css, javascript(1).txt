@@ -1,0 +1,54 @@
+<form> 입력양식
+<input type="종류" 
+         name="변수명">
+onclick="check()"
+on+이벤트
+onchange
+onblur
+onfocus
+
+<div> division 구역
+
+id - 중복x
+name - 중복 가능
+type="button" 제출기능x
+type="submit" 제출버튼
+
+<script>
+
+function 함수이름() {
+}
+
+alert() 경고창 띄우기
+
+F12 개발자도구>Console => 애러시, 문제 확인
+
+var 변수
+자료형 없음, 가변자료형
+
+내장객체
+
+트리구조
+자료구조
+node 노드 - 요소
+
+document 현재 문서를 가리키는 내장객체
+
+console.log()
+
+getElementById("태그의 id") 태그 조회
+
+태그.value :태그에 입력된 값
+==equal
+
+변수와 함수
+variable
+function 기능
+
+함수() 소괄호가 있는 건 다 함수
+
+return 되돌려주는 동작
+return 값;
+return;  => 돌려줄 값이 없음
+
+태그.focus()

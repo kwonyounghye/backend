@@ -1,0 +1,13 @@
+jsp - Dynamic Web Project
+maven 메이븐(빌드도구)
+src/main/java => javaCode
+src/main/resources => xml, mapper
+src/test/java => junit 테스트도구
+src/test/resources
+
+src/main/webapp => webContents
+	WEB-INF 외부접속금지
+pom.xml 외부 라이브러리 정의
+src/main/webapp/WEB-INF/spring/root-context.xml
+서블릿 이외의 설정
+src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml

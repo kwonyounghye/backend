@@ -1,0 +1,7 @@
+동기식	sync
+순서대로 처리
+비동기식	async
+병렬처리
+
+java		oracle
+ResultSet		cursor(레코드를 1개씩 읽는 자료형)

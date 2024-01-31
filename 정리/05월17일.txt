@@ -1,0 +1,9 @@
+url.py		views.py		템플릿
+url, 함수 매핑	데이터 처리	화면 출력
+
+
+templates	동적
+static 		정적 파일 - js, image, css
+
+폼으로 데이터를 전달할 경우 csrf(Cross-Site Request Forgery, 사
+이트간 요청 위조) 관련 코드를 추가해야 함

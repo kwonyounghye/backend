@@ -1,0 +1,2 @@
+inner join(join) 	내부조인
+outer join 	외부조인

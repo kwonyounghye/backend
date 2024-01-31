@@ -1,0 +1,41 @@
+레코드셋(리스트)=>DefaultTableModel=>JTable
+
+sqlplus
+sqlplus system/1234
+sqlplus/as sysdba
+
+		MySQL		Oracle
+				XE(database이름)
+데이터베이스	database		table space
+테이블		table		table
+관리자		root		sys/system
+툴		HeidiSQL		SQL Developer
+주석		#		--
+전체 실행		F9		F5
+현재 실행		Ctrl+F9		Ctrl+Enter
+테이블리스트	show tables;	select*from tab;
+결합연산		concat(A,B)	A||B
+	
+Mysql	select concat(ename, '의 급여는 ', sal, '입니다.') from emp;
+Oracle	select ename || '의 급여는 ' || '입니다.' from emp;
+
+
+
+create tablespace java datafile 'mydb.dbf' size 10m autoextend on next 10m maxsize unlimited;
+
+select	필드선택 		*모든 필드(3)
+from	테이블, 뷰(실행 순서 1)
+where	레코드(행) 선택(2)
+group by	레코드 요약
+having	group by 결과 중에서 선택
+order by	정렬 기준(4)
+limit	행 제한
+
+null	
+""	빈문자열
+" "	스페이스
+
+CRUD(Create, Read(Select), Update, Delete)
+
+InputStream 바이트
+FileInputStream 파일을 1바이츠

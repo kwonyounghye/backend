@@ -1,0 +1,11 @@
+할 것
+1. 
+
+?
+1. 투어 날짜를 매주 언제로 올릴 수 있게 해서 제품 구매하기를 누를 때 날짜도 정하게 할 것인지
+날짜를 하루씩 올릴 수 있게 할 것인지 -> 만약 한 날짜로 한다면 time 컬럼은 필요 없음
+2. 상품 리스트에 검색할 수 있는 기능
+3. 지역별로 나눠서 보여지게 하는 것은 상품 코드에 조건을 넣어야 할 텐데 아직 배우지 않음
+
+
+product_list.jsp(list.do) -> btnAdd클릭(jsvascript) -> write.do -> productController.java(return product_write)

@@ -1,0 +1,131 @@
+cmd
+관리자 계정으로 접속
+sql system/1234
+테이블 스페이스 만들기
+create tablespace project
+datafile 'c:/data/project.dbf' size 10m
+autoextend on
+next 10m
+maxsize unlimited;
+사용자 계정 만들기
+create user project identified by 1234
+default tablespace project;
+사용권한 부여
+grant connect,resource,dba to project;
+새로 만든 계정으로 로그인
+conn project/1234
+
+
+web.xml
+	웹프로젝트의 설정 파일
+servlet-context.xml
+	서블릿 관련 설정
+root-context.xml
+	서블릿 이외의 설정
+pom.xml
+	maven 설정
+
+자바 빌드 도구 : maven, gradle 등...
+
+xml 데이터 전달, 설정
+
+pom.xml-<properties>-<java-version>1.8</java-version>
+			<org.springframework-version>5.2.18.RELEASE</org.springframework-version>
+
+미리 만들어 놓은 것을 끼워넣기.........(의존관계지만 영향을 안받을 수 있음.......)
+
+
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+==>mvnrepository.com 사이트에서 다운로드
+==>c:/사용자/계정/.
+
+web.xml
+웹프로젝트에서 제일 먼저 읽는 설정 파일
+
+
+<servlet> 서블릿
+		<servlet-name>appServlet</servlet-name> 같
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup> =. 1순위
+	</servlet>
+		
+	<servlet-mapping> 서블릿 매핑
+		<servlet-name>appServlet</servlet-name> 같
+		<url-pattern>/</url-pattern> =>모든 서블릿
+	</servlet-mapping>
+*.jsp =>모든 jsp
+*.do => 모든 do
+/member/*.do 
+/* => jsp. 서블릿의 모든 액션
+/ => 모든 서블릿
+
+servlet-context.xml
+bean : 콩 => 서버가 시작될 때 메모리에 로드
+<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+				      접두사
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+				      접미사
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+
+켜자마자 404 세팅 or xml
+
+component : 객체
+component-scan 객체 검색
+
+@Controller 	컨트롤러 빈
+	흐름 제어, url과 함수 매핑
+@Repository
+
+<%@ page session="false" %> 세션 무시
+
+		Beans Graph 화살촉이 의존받는 것
+
+<bean id = "a" class = "A"> ==> A a = new A( );
+
+sqlSession mybatis sql 실행
+constructor 생성자
+ref 참조
+classpath: src/main/resources
+
+mybatis-config.xml 쓰지 않지만 없으면 에러남 => spring04에서 복사
+mapper : 테이블-클래스 연결
+mapeers/**/*.xml
+	mappers패키지의 모든 하위 패키지의 모든 xml 파일들
+pom.xml = >spring04에서 ojdbc6, commons-dbcp, spring-jdbc, mybatis, mybatis-spring
+root-context.xml =>spring04에서 가져옴, 
+	<property name="username" value="project" />
+		<property name="password" value="1234" /> 변경
+src/main/resources/mappers패키지/books.xml
+
+----------서버켜짐
+BookDTO.java
+	data transfer object
+dto - mybatis mapper - table
+BookDAO.java
+BookDAOImpl.java
+	namespace.id로 호출
+book.xml
+	mapper
+
+@Controller, @Repository => spring에서 관리(서버가 올라올 때)-파일에 s가 붙음
+
+books.xml의 namespace의 book와 BookDAOImpl의 "book."과 일치해야 함
+
+books.xml
+	<mapper namespace="book"> 네임스페이스
+id : 변수명(겹치면 안됨) 
+<select id = "list" resultType = "com.example.myproject.BookDTO"> =>BookDTO list = new BookDTO( );
+select * from books
+</select></mapper> 추가
+HomeController.java 추가
+list.jsp만들기
+

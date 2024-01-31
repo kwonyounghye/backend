@@ -1,0 +1,54 @@
+method=function
+함수( ) call 호출
+
+arguments=paramenters 매개변수, 인수, 인자
+
+class=변수(속성:property)+함수(기능:method)
+
+자료형 변수명;
+new 자료형( );
+
+변수의 종류
+value 저장
+address 저장
+
+.     member 연산자
+
+캡슐화 - 변수는 비공개, 함수는 공개
+
+
+private int age;
+public void setAge(int age) {//입력함수 setter
+this.age=age;
+}
+public int getAge( ) {//출력함수 getter
+return age;
+
+
+new 클래스 이름=> 인스턴스 생성, 인스턴스화, instance, 객체 object
+
+null 없음
+
+
+
+
+The assignment to variable name has no effect
+      대입/할당        변수                  무효
+
+
+
+
+접근권한
+private 비공개
+default 같은 패키지 공개, 다른 패키지 비공개
+protected 하위 클래스에 공개
+public 공개
+
+
+String gender=...;//1
+if(gender=="1")
+              상수
+a.equals(b)
+a와 b는 같다
+
+java에서 String비교=>equals

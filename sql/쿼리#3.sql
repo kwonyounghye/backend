@@ -1,0 +1,5 @@
+SHOW DATABASES;
+
+USE mydb;
+
+SELECT * FROM emp;

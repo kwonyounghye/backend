@@ -1,0 +1,59 @@
+https: 프로토콜
+//
+cdn.pisabay.com 도메인(호스트)
+photo/2017/11/25/17/17 디렉토리
+/sandwich-2977251_640.jpg
+
+
+소켓: 데이터의 접점
+
+포트번호: 0~65535 	1 port - 1service
+
+text data
+binary data 이진 데이터, 이미지, 픽셀 0~255
+
+String		변경되지 않음
+StringBuilder	원본이 변경됨
+
+%외부에서도 접속 가능한 계정
+localhost 내부에서만 접속 가능한 계정
+
+root계정 -
+
+CREATE DATABASE web;
+CREATE USER 'user'@'%' IDENTIFIED BY '1234';
+CREATE USER 'user'@'localhost' IDENTIFIED BY '1234';
+FLUSH PRIVILEGES;
+
+CREATE DATABASE web;
+
+GRANT ALL PRIVILEGES ON web.* TO 'user'@'%';
+GRANT ALL PRIVILEGES ON web.* TO 'user'@'localhost';
+SHOW DATABASES;
+
+-두번째부터 선택 실행-user계정-
+
+데이터베이스	엑셀파일
+테이블		엑셀시트, 표형식으로 저장되는 자료
+
+alt+방향키 위치 이동 가능
+
+예외 처리: 필수 - 파일 입출력, 네트워크 관련 작업, DB연결 작업, 멀티스레드...
+	 선택
+
+finally 리소스 정리
+
+TCP 오류가 있으면 처음부터 재전송함, 정확한 통신이 필요할 때 사용
+
+new File("c:/data/salary.txt") 파일 정보를 참조하는 클래스
+new FileOutputStream() File+OutputStream 파일 내용을 1바이트씩 읽는 클래스
+new OutputStreamWrite() OutputStream+Writer 문자 단위로 저장
+new BufferedWriter() 버퍼를 사용한 Writer
+bw.writer
+bw.close(); 없으면 버퍼가 비워지지 않아서 내용이 txt로 빠지지 않음, 단독으로 쓸 수 없음 예외처리가 들어가야함
+bw.
+
+InputStream 바이트 단위+reader 문자단위
+File+InputStream 파일의 내용을 읽는 클래스                                                                                                           
+
+csv: comma seper

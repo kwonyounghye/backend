@@ -1,0 +1,24 @@
+스케일링 
+
+loss		손실함수 - 1개 샘플
+			binary_crossentropy	이진분류(sigmoid)
+			categorical_crossentropy	다분류(softmax)
+			mse
+optimizer		비용함수 - mini batch
+			adam, rmsprop
+
+Dst tensor is not initialized : 메모리 부족
+
+
+회귀분석
+	활성화함수 없음
+	model.add(Dense(1))
+이진분류
+	sigmoid - 별도 작업 필요 없음, binary_crossentropy
+	softmax(원핫인코딩해야됨)
+		y변수 원핫인코딩
+		binary_crossentropy/categorical_crossentropy
+다분류
+	softmax만
+		y변수 원핫인코딩
+		categorical_crossentropy

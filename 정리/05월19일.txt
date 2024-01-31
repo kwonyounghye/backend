@@ -1,0 +1,47 @@
+#content > div.article > div.section2 > div.section_stock_market > div.section_stock > div.kospi_area.group_quot.quot_opn > div.heading_area > a > span
+
+#: id
+<...id = "content">
+
+parent>child
+>자손 태그
+
+div.article
+<div class="article"
+
+#content > div.article2 > div.section1 > div.group1 > table > tbody > tr.up.bold > th > a
+#content > div.article2 > div.section1 > div.group1 > table > tbody > tr:nth-child(2) > th > a
+#content > div.article2 > div.section1 > div.group1 > table > tbody > tr:nth-child(3) > th > a
+#content > div.article2 > div.section1 > div.group1 > table > tbody > tr.up.bold > td
+#content > div.article2 > div.section1 > div.group1 > table > tbody > tr:nth-child(3) > td:nth-child(2)
+
+#mw-content-text > div.mw-parser-output > ul:nth-child(49) > li
+#mw-content-text > div.mw-parser-output > ul:nth-child(49) > li
+
+#section_body > ul.type06_headline > li:nth-child(1) > dl > dt:nth-child(2) > a
+#section_body > ul.type06_headline > li:nth-child(2) > dl > dt:nth-child(2) > a
+
+#section_body > ul.type06_headline > li
+
+#region--content_status_information > div:nth-child(2) > div.section--search_relative_information.section--relative_keywords_container > div > ul > li:nth-child(4) > a
+#region--content_status_information > div:nth-child(2) > div.section--search_relative_information.section--relative_keywords_container > div > ul > li:nth-child(5) > a
+
+#region--content_status_information > div:nth-child(2) > div.section--search_relative_information.section--relative_keywords_container > div > ul > li
+
+#search_list > tr:nth-child(11) > td.detail > div.title > a > strong
+#search_list > tr:nth-child(22) > td.detail > div.title > a > strong
+td.detail > div.title > a > strong
+
+#search_list > tr > td.detail > div.author > a:nth-child(1)
+#search_list > tr > td.price > div.sell_price > strong
+
+https://movie.naver.com/movie/bi/mi/pointWriteFormList.naver?													
+body > div > div > div.score_total > strong > em												
+body > div > div > div.score_result > ul > li > div.score_reple
+body > div > div > div.score_result > ul > li > div.score_reple > p
+body > div > div > div.score_result > ul > li > div.score_reple > p	
+body > div > div > div.score_result > ul > li:nth-child(1) > div.score_reple > p
+body > div > div > div.score_result > ul > li:nth-child(1) > div.score_reple												
+#_filtered_ment_0
+#_filtered_ment_1
+body > div > div > div.score_result > ul > li > div.star_score > span

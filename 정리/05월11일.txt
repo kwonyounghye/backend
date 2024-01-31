@@ -1,0 +1,12 @@
+함수이름 = lambda input:output
+def 함수이름(input):
+	return output
+
+
+filter: 값 선택
+
+y=
+표그리기
+import pandas as pd
+수치계산
+import numpy as np

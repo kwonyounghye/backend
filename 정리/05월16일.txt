@@ -1,0 +1,2 @@
+CharField: max_length(*)
+TextField: max_length(x)

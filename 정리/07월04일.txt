@@ -1,0 +1,11 @@
+SimpleRNN 단순 순환신경망, 타임스텝이 길어지면 예측력이 낮아짐
+LSTM Long Short-Term Memory
+
+.reshape((60000, 28, 28, 1)
+흑백이미지 1
+컬러이미지 3
+
+합성곱 필터수 32개 필터사이즈(3x3)
+model.add(layers.Conv2D(32,(3x3)
+맥스플링 정보 요약 2x2
+model.add(layers.Maxp

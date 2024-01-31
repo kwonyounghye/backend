@@ -1,0 +1,29 @@
+ArrayList 순서대로 저장
+
+add( ) 추가
+size( )  개수
+get( )인덱스 조회
+
+HashMap
+put
+
+stack 스택, 밑에서 위로 쌓이는 메모리
+heap 
+
+add throws declaration
+추가 throws 선언문
+                리턴타임 함수이름() throws 예외처리클래스{
+}
+ surround with try/catch
+둘러싸다 
+
+
+thread 스레드, 거미줄
+          프로그램의 실행 단위
+single thread - 순서대로 처리되는 프로그램
+
+multi thread - 순서는 중요x, 속도가 중요
+스래드 인스턴스 start()==>run()
+
+CLI - Command Line Interface
+GUI - Graphic User Interface

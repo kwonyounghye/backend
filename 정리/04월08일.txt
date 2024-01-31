@@ -1,0 +1,4 @@
+list.do=>filter=>list.do
+
+*.do	확장자가 do
+/*	모든 필터

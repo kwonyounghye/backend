@@ -1,0 +1,2 @@
+MVC pattern:Model(데이터 ex. dao,dto), View(출력), Controller(흐름제어(처리))
+

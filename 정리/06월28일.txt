@@ -1,0 +1,24 @@
+활성화 함수 activation
+	항등함수 - 회귀분석
+sigmioid:hidden => output
+	0.0~1.0
+	분류:이진분류
+	relu(input=>hidden)
+
+iris
+	독립변수 4개
+	input layer
+	input node 4개
+	input	hidden	output
+				softmax
+
+비용함수(손실함수, 최적화함수)
+	오차를 최소화시키는 함수
+	경사하강법
+	학습률
+
+미분 : 한 순간의 변화량
+오차 최소화 - 기울기 0 
+
+validation: 학습에 직접 참여하지는 않으나 파라미터 튜닝, 조기학습종료 조건 설정 등
+

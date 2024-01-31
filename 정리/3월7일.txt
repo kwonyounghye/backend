@@ -1,0 +1,29 @@
+commit/rollback
+
+set autocommit=0;오토커밋을 수동으로 변경한 후에 rollback 사용 가능 
+rollback: 수정/삭제를 잘못했을 때 되돌려줌
+
+group by 집계기준필드
+
+서브쿼리: 쿼리 속에 있는 또다른 쿼리
+()로 묶어야함
+
+modify 이름은 그대로 하고 사이즈 등을 바꿀 때 
+change 필드명 변경
+
+alter table 리모델링
+drop 재건설
+
+제약조건
+primary key: 중복값 x, null x
+foreign key: 다른 테이블의 primary key
+unique: 중복x, null o
+not null: 필수 입력
+
+commit: 변경사항 확정
+rollback: 변경사항 취소
+ 
+mysql: auto commit(기본 옵션)
+oracle: 수동커밋
+
+필드명 삭제

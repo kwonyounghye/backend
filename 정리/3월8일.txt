@@ -1,0 +1,23 @@
+full scan : 전부 확인/모든 레코드를 검사
+index by scan : 
+
+DDL(Data Definition Language) 데이터 정의 언어
+create 생성
+drop 삭제
+alter 변경
+
+sql 실행
+1. 해석
+2. 실행 계획 수립
+3. sql 실행
+
+unique index 유일한 인덱스
+nonunique index
+
+jdbc: Java DataBase Connectivity 자바로 데이터베아스에 연결하는 기술
+
+파일처리 네트워크 db 스레드->예외처리 필수
+
+executeQuery - select 읽기
+executeUpdate - insert, update, delete 쓰기
+commit<savepoint<rollback

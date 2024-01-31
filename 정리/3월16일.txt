@@ -1,0 +1,18 @@
+		MySQL			Oracle
+현재날짜		now()			sysdate
+null처리 		ifnull(A,B)			nvl(A,B)
+if		if(조건, true, false)		decode(A, B, true, false)
+				       A,B가 같으면 true, 아니면 false
+varchar		varchar			varchar2
+int		int 			int
+double		double			double
+					number-정수, 실수
+commit		자동커밋			수동커밋(sqlplus)
+					자동커밋(sqldevelop)
+객체지향 프로그래밍의 4대 특성
+캡슐화  - 중요한 자료 숨김
+상속 - 코딩 양이 줄어들음
+추상화 - 추상 클래스 : 부분, 인터페이스 : 전체
+코드가 통일될 수 있음(표준화)
+다형성 - ex) List a = new ArrayList( );
+	List b = new Vector( );

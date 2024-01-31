@@ -1,0 +1,11 @@
+rvalue 0.0~1.0 설명력
+mse 평균제곱오차
+mae 평균절대오차
+rmse 평균제곱근오차
+
+
+시계열
+arima 모형
+순환신경망 RNN
+
+https://www.blockchain.com/ko/charts/market-price?timespan=60days

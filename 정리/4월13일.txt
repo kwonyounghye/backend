@@ -1,0 +1,4 @@
+singleton 싱글톤
+객체를 1개만 생성
+MemberDAO memberDao = new MemberDAOImpl();=>spring: @Inject
+					MemberDAO memberDao;

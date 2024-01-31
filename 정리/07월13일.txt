@@ -1,0 +1,4 @@
+train	validation		test
+
+flip 뒤집기
+

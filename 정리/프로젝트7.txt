@@ -1,0 +1,24 @@
+servlet-context.xml
+<beans:bean id = "sampleInterceptor" class = "com.example.trip.interceptor.SampleInterceptor" />
+<beans:bean id = "loginInterceptor" class = "com.example.trip.interceptor.LoginInterceptor" />
+
+<interceptors>
+<interceptor>
+<mapping path= "/shop/**" />
+<beans:ref bean = "sampleInterceptor" />
+</interceptor>
+
+<interceptor>
+<mapping path= "/shop/registration.do" />
+<mapping path= "/shop/edit.do" />
+<beans:ref bean = "loginInterceptor" />
+</iterceptor>
+
+
+
+
+
+
+
+
+

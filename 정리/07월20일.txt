@@ -1,0 +1,46 @@
+운영체제에 따라 코드가 바뀌면 운영체제에 종속적
+
+절차지향 - 함수
+객체지향 - 클래스(변수+함수)
+
+같은 클래스에서 이름이 같은 함수(오버로딩)
+상위클래스 함수를 하위클래스에서 재정의해서 덮어씀(오버라이딩)
+
+Web Server - 웹서비스 제공
+	apache
+	html, js, css
+WAS
+	web application server(was) - 톰캣
+	java=>compile=>html(자바를 컴파일하는 기능은 웹서버에 없음)
+
+서블릿(servlet) 서버에서 실행되는 자바 프로그램
+	자바프로그램 중심
+jsp 
+	html 페이지중심
+
+get 방식: 요청, header
+	url에 덧붙여서 전달 
+	query string 질의 문자열
+
+post 방식: 전달, body
+
+세션 session - 서버에 저장(보안성이 좋음 ex.인터넷뱅킹)
+
+쿠키 cookie - 클라이언트에 저장(내 컴퓨터에 기록을 남김)	
+
+model1 - jsp 페이지 중심
+model2 - 서블릿 중심
+MVC 패턴
+	Model 자료 저장, 	view,	Controller
+	dao, dto		페이지
+
+추상클래스 일부 함수 추상
+인터페이스 모든 함수 추상
+
+java extends 다중상속 금지
+python 다중상속 가능(cf.C++)
+
+java 다중상속: interface로 만들어서 implements
+
+Call by Reference : 주소전달
+Call by Value : 실제값 전달

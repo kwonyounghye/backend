@@ -1,0 +1,31 @@
+import - 외부 기능 불러옴
+            java.lang 패키지 (기본패키지)
+public 외부에서 사용 가능
+private 외부에서 사용 못함
+class 자바 프로그래밍의 기본 단위, 자료형
+data type
+기본자료형 8가지
+byte, float, int, boolean, char, double, short, long
+
+{} 중괄호  블록, 프로그램의 시작과 끝
+() 소괄호  함수 function
+             cf. 괄호X=>변수, 괄호O=>함수
+[] 대괄호 배열 array
+static 정적인
+void 비어있는-> 계산만
+
+       계산만
+       계산+리턴
+
+main 
+String
+Scanner
+new 자료형 : 변수 생성
+        동적 메모리 할당
+dynamic memory allocation
+
+garbage collection
+가비지 컬렉션
+
+println:print+line 줄바꿈
+nextInt 정수입력

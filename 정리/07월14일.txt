@@ -1,0 +1,22 @@
+강화학습
+-지도학습
+-비지도학습
+-강화학습 : 스키너 상자 - 
+
+yum 설치 프로그램
+* 전부
+
+ls 리스트, 파일목록
+
+pwd - print work directory 현재 작업 중인 디렉토리 표시
+/root - root 사용자의 홈디렉토리
+/home/user - user 사용자의 홈디렉토리
+/home/info
+
+/ - 최상위 디렉토리
+cd - change directory 디렉토리 변경
+cd.. 상위 디렉토리로 이동
+cd/ root 디렉토리로 이동
+ls-la 자세한 파일 목록
+
+inet 리눅스 아이디 192.168.32.129

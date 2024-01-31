@@ -1,0 +1,50 @@
+select min(sal) from emp;
+select * from emp 
+where sal = 300;
+select * from emp 
+where sal = (select min(sal) from emp);
+
+select avg(sal) from emp;
+
+select ename, dname, sal
+from emp e, dept d
+where e.deptno = d.deptno
+and sal > 509.384615384615384615384615384615384615;
+
+select ename, dname, sal
+from emp e, dept d
+where e.deptno = d.deptno
+and sal > (select avg(sal) from emp);--괄호 필수
+
+select max(sal) from emp
+where deptno = 30;
+
+select ename, dname
+from emp e, dept d
+where e.deptno = d.deptno
+and sal > (select max(sal) from emp where deptno = 30);
+
+select ename, e.deptno, dname
+from emp e, dept d
+where e.deptno = d.deptno;
+--테이블.필드
+select ename, deptno, (select dname from dept where deptno = e.deptno) dname
+from emp e;
+
+select ename, sal, deptno
+from emp e
+where sal < (select avg(sal) from emp where deptno = e.deptno);
+
+select avg(sal) from emp where deptno = 30;
+
+select*from prof;
+
+select pname, hiredate, mname
+from prof p, major m
+where p.majorno = m.majorno 
+and hiredate>(select hiredate from prof where pname='조재철');
+
+select pname, pay, hiredate
+from prof
+where hiredate>(select hiredate from prof where pname = '심상수')
+and pay<(select pay from prof where pname='박철호');

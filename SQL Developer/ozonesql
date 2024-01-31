@@ -1,0 +1,15 @@
+create table ozone (
+ozone number,
+solarr number,
+wind number,
+temp number,
+month number,
+day number
+);
+
+select *from ozone;
+
+select round(ozone,1) ozone, round(solarr,1) solarr, wind, temp, month, day from ozone;
+
+select round(ozone,1) ozone, round(solarr,1) solarr, wind, temp, round((temp-32)/1.8,1) temp2, month, day from ozone;
+

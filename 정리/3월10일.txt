@@ -1,0 +1,36 @@
+DAO - Data Access Object
+   데이터	  액세스	객체
+DTO - Data Transfer Object
+      데이터 전달      객체
+	=>테이블=>자바 클래스
+		필드=>변수
+
+배열, ArrayList offset
+
+executeQuery() select 전용
+executeUpdate() select가 아닌 경우
+CRUD - Create Read Update Delete
+
+웹사이트 개발=>서비스
+호스팅 ex.월세
+IDC 
+자체 서버에 운영 ex.
+
+select
+	Connection		접속
+	PrapareStatement		sql 실행
+		executeQuery()
+	ResultSet			레코드셋 탐색
+
+insert, update, delete
+	Connection		접속
+	PrapareStatement		sql 실행
+		executeUpdate()
+	ResultSet			레코드셋 탐색
+
+테이블과 클래스 연결 mapping
+dao 데이터 접근(처리) 객체 - sql 명령어 실행
+dto 데이터 저장(전달) - 레코드 저장, 전달
+vo
+
+dao.list()=>dbConn()=>상품리스트리턴=>주소전달

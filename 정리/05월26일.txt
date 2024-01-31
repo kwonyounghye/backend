@@ -1,0 +1,33 @@
+       주제 선정 => 데이터 수집 => 전처리(결측값, 원핫인코딩, 이상치, 파생변수)
+		웹스크레이핑
+		공공 api
+		kaggle
+=> 탐색적 데이터 분석		     
+=> 기계학습(모델링) - 회귀분석, 분류, 군집화, 강화
+=> 평가	(분류 - 정확도, confusion_matrix(), lassification_report()
+	회귀 - r-squared, mse, mae, rmse)
+=> 시각화
+
+=> 실무에 활용
+
+statsmodel
+	model.predict(person1)	1차원 배열
+
+skitlearn
+	person1
+	person2
+	person3
+
+불확실성, 혼잡도
+entropy
+엔트로피		0.0~1.0
+
+gini
+지니		0.0~0.5
+
+
+좌적합x(학습이 너무 잘됨), 과소적합x, 적당o
+
+
+tree model
+# 특성 중요도

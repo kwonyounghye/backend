@@ -1,0 +1,32 @@
+AOP(aspect Oriented Programming)
+
+Aspect: 공통 관심사
+Join Points: 
+Advice: 
+
+
+
+@Before: 메인 액션 전
+@After: 메인 액션 후
+@Around: 메인 액션 전후
+
+
+
+
+
+@Controller
+	view를 리턴
+	data를 리턴하려면 @RestController
+
+@Responsentity
+	view와 data 모두 리턴
+
+
+
+
+AOP: 공통업무를 지원하는 기능
+
+
+
+interceptor(인터셉터)
+jsp 

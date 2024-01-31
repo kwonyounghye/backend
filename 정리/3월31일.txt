@@ -1,0 +1,17 @@
+ERD 테이블들의 관계
+CLI, GUI -> jar
+webproject(jsp, spring) -> war
+
+Asynchronous Javascript And Xml
+ajax
+비동기적인 자바스크립트와 xml
+
+id가 div1인 태그
+$("#div1").html(txt);
+태그 이름이 div1
+<div1></div1>
+$("div1").html(txt);
+
+javascript:alert(document.cookie)
+
+

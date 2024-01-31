@@ -1,0 +1,30 @@
+eval() : 스트링 속에 있는 명령어 실행
+
+
+모듈	exo1.py
+import ex01
+
+argv[1:]: 1부터 끝까지
+argument value 프로그램을 실행할 때 전달되는 값
+
+	if	for	while
+	함수	
+	클래스
+
+콜론이 없으면 들여쓰기x
+
+while + 조건
+
+range(stop)
+rang(start, stop, step)
+
+range(100): 0~99
+range(101): 0~100
+range(1,100): 1~99
+range(1,101):1~100
+range(1,100,2):1~99(2씩 증가)
+
+
+되돌려줄 값이 있으면 return
+내용이 없으면 pass
+

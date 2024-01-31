@@ -1,0 +1,27 @@
+excel
+=IF(N2>=AVERAGE($N$2:$N$507), 1,0)
+=if(조건식, true, false)
+
+
+java mvc		python
+
+Model		Model
+View		Template(화면)
+Controller	View(Template으로 넘어가기 전 단계)
+
+작업순서
+모델클래스 생성 => url 정의 => view 작성 => Template 작성
+
+주소로 넘어감 get 방식
+
+from django.db import models
+from django.contrib import admin
+from memo.models import Memo
+
+# Create your models here.
+
+class MemoAdmin(admin.ModelAdmin):
+    #관리자 화면에서 관리할 필드 목록 정의
+    list_display = ('writer', 'memo')
+    
+    admin.site.register(Memo, MemoAdmin)

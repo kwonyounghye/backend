@@ -1,0 +1,4 @@
+$(요소)JQuery 선택자
+${변수 or 식}
+
+http://localhost:8000/jsp02/el/ex02.jsp

@@ -1,0 +1,43 @@
+F2누르면 이름 바꿀 수 있음
+
+컴포넌트- 화면구성 도구(버튼, 텍스트 상자..)
+컨테이너- 컴포넌트를 담는 그릇
+
+Panel - FlowLayout, 2개 이상을 묶어서 배치
+Frame - BorderLayout(한 영역에 1개만 배치)
+
+
+JButton button1=new button("버튼1");
+          vatiable      text
+
+
+이벤트 처리: 시스템과 유저의 상호 작용
+                요청과 응답
+
+
+내부클래스: 코드를 한곳에 모을 수 있음, 소스를 숨길 수 있음(코드 은닉)
+디컴파일: A.class => A.java
+
+내부클래스 활용 방법: 이벤트 처리
+
+
+내부클래스 : 
+class A  extends Frame {
+	class B extends Thread{
+}
+}
+JLabel : 화면에만 표시되고 입력은 못하는 것
+JPanel- 2개 이상의 커모넌트
+레이아웃 - 화면배치
+JPanel - BorderLatout, 5개 영역, Center
+JPanel - FlowLayout
+absolute layout 절대좌표
+
+대상 add동작Listener(처리할 코드)
+button1.addActionListener(......);
+이벤트소스 이벤트리스너  이벤트핸들러
+
+CLI 콘솔 응용 프로그램
+WEB웹 프로그램
+app 안드로이드 앱 개발
+gui 응용 프로그램

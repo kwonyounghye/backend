@@ -1,0 +1,203 @@
+         MVC
+Model
+View
+Controller
+
+c 
+   javascript
+   python
+   java
+절차지향 - 함수
+
+발전 속도: 하드웨어>>>>>소프트웨어 
+소프트웨어 위기 -> 객체지향 - 클래스(ex. C++, java)
+
+
+Java SE Standard Edition 표준 에디션
+Java EE : Enterprise Edition 기업용
+jsp, spring
+
+LTS: Long Term Service
+
+stack 스택
+heap 힙
+
+정적 메모리 할당, compile=>stack
+int a=10;
+동적 메모리 할당, run time=>heap
+new Member();
+
+new int[10];
+
+delete->c언어
+run garbage collector
+불필요한 메모리
+
+
+
+10  2진수  16진수
+0     0        0
+1    1         1
+2    10        2
+3    11        3
+4   100        4
+5                5
+6                6 
+7                7
+8                8
+9                9
+10               a
+11                b
+12                c
+13                d
+14                e
+15                f
+16               10
+
+
+
+
+기본자료형 ===>value 값 저장
+참조자료형(기본자료형이 아닌 모든 자료형)==>address 주소 저장
+
+wrapper class
+랩
+
+기본자료형 클래스자료형
+boolean          Boolean
+byte                Byte
+int                      Int
+long                 Long
+char                Char
+float                Float
+double           Double
+
+
+
+if/switch 조건문
+for/while/do~while(최소 1번 실행) 반복문
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+관리자: 명령 프롬프트
+
+Microsoft Windows [Version 10.0.19042.1526]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\tjoeun>cd C:\work\java\bin
+
+C:\work\java\bin>java ch05.Ex13
+파라미터를 입력하세요.
+
+C:\work\java\bin>java ch05.Ex13 100
+합계: 5050
+
+C:\work\java\bin>
+
+
+-----------------------------------------------------------
+Microsoft Windows [Version 10.0.19042.1526]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\tjoeun>cd C:\work\java\bin
+
+C:\work\java\bin>java ch05.Ex14
+사용법: java 클래스이름 단
+
+C:\work\java\bin>java dh05.Ex14 9
+Error: Could not find or load main class dh05.Ex14
+Caused by: java.lang.ClassNotFoundException: dh05.Ex14
+
+C:\work\java\bin>
+C:\work\java\bin>java ch05.Ex14
+사용법: java 클래스이름 단
+
+C:\work\java\bin>java ch05.Ex14 9
+9X1=9
+9X2=18
+9X3=27
+9X4=36
+9X5=45
+9X6=54
+9X7=63
+9X8=72
+9X9=81
+
+C:\work\java\bin>
+C:\work\java\bin>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class = 속성(변수) + 동작(함수)
+
+this.변수
+this.함수
+
+this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

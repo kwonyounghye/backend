@@ -1,0 +1,10 @@
+@ResponseBody: dto => json으로 변환
+@RequestBoody: json => dto로 전환
+ResponseEntity데이터, 상태코드
+
+@Controller
+	return => view
+		 data(@ResponseBody)
+
+@RestController
+	그냥 return 가능

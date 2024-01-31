@@ -1,0 +1,27 @@
+core tag - set, forEach, if, choose
+
+SqlSessionFactory - SqlSession을 생성시키는 객체
+SqlSession - sql 명령어를 실행시키는 객체
+
+selectList - 리스트 리턴
+selectOne - 1개 리턴
+
+#{변수} 따옴표 포함
+${변수} 따옴표 제외
+
+시작
+memo.jsp=>MemoController.java=>
+
+jQuery=>클라이언트(사용자)에서 실행
+	$(요소) 소괄호	
+EL =>서버에서 실행
+mybatis	${변수/식} 중괄호
+	a='kim'
+	${변수} 따옴표 없음
+	#{변수} 따옴표 있음
+	${a}=>kim
+	#{a}=>'kim'
+
+where ${search_option} like  '%' || #{search} || '%'
+where writer like '%'||'writer'||'%'
+where memo like '%'||'memo'||'%'

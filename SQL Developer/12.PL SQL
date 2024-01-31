@@ -1,0 +1,54 @@
+                                --변수명    자료형
+create or replace procedure sal_p(p_empno number)
+is 
+begin 
+update emp
+set sal = sal*1.1
+where empno = p_empno;
+end;
+/
+rollback;
+select*from emp;
+--프로시저이름(전달값)
+execute sal_p(7499);
+--데이터사전
+select * from user_source where name = 'SAL_P';
+
+create table memo (
+idx number primary key,
+writer varchar2(50) not null,
+memo varchar2(500) not null,
+post_date date default sysdate--기본값 현재 날짜
+);
+--1부터 시작, 1씩 증가되는 시퀀스
+create sequence memo_seq
+ start with 1
+ increment by 1;
+--시퀀스.nextval : 다음 번호 발급
+insert into memo(idx, writer, memo) values (memo_seq.nextval, 'kim', 'memo');
+insert into memo(idx, writer, memo) values (memo_seq.nextval, 'park', 'memo2');
+select * from memo;
+--기존테이블에 새로운 필즈 추가
+alter table memo add ip varchar2(50);
+desc memo; --테이블의 필드 목록
+                                            --매개변수
+create or replace procedure memo_insert_p (p_writer varchar, p_memo varchar, p_ip varchar)
+is--ㅡ선언부
+begin
+    insert into memo (idx, writer, memo, ip)
+    values (memo_seq.nextval, p_writer, p_memo, p_ip);
+end;
+--명령어 끝내고 빠져나옴(cmd)/PL/SQL 블록의 끝
+/
+--execute 프로시저이름(전달할값)
+execute memo_insert_p ('김철수', '메모', '192.168.0.10');
+select * from memo;
+--데이터 사전 확인
+select * from user_source where name = 'MEMO_INSERT_P';
+
+select * from tab;
+
+drop table emp3;
+drop table emp;
+
+select * from emp;

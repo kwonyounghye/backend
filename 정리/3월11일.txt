@@ -1,0 +1,34 @@
+java 배포 방법
+	jar 	자바 클래스 압축 파일
+	war 	웹프로젝트 배포
+
+java=>class	컴파일 compile
+class=>java	디컴파일 decompile
+
+insert, update, delete
+	commit 확정
+	rollback 취소
+
+one hot encoding
+
+mysql -u root -p --local-infile=1
+set global local_infile=1;
+use web;
+LOAD DATA LOCAL INFILE 'c:/data/ontime/airports2.csv' 
+INTO TABLE airports FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+집계함수
+
+dto->dao->
+
+Stream	1byte
+InputStream	1byte씩 읽음
+OutputStream	1byte씩 씀
+FileInputStream	파일에서 읽어옴
+FileOutputStream	파일에서 씀
+1char
+Buffer 빠르게
+BufferedInputStream	
+BufferedOutputStream

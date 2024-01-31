@@ -1,0 +1,33 @@
+self가 없으면 property를 찾아갈 수 없음
+
+f'	' format string
+{self.a:.2f}
+{변수}값이 출력
+.2 소수 둘째자리 f float 실수형
+
+
+class A:
+	pass
+class B:
+	pass
+class(A,B): #다중상속 가능
+	pass
+
+
+#확장자 py =>모듈
+mycode.py
+	def test(): 
+		pass
+
+import mycode as mc :참조
+
+
+import mycode
+
+
+
+
+a.py
+	현재 파일에서 실행한 경우, 외부에서 import한 경우에는 실행되지 않음
+	if __name__=='__main__':
+	

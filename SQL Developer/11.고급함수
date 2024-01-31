@@ -1,0 +1,43 @@
+select ename, deptno, comm, sal*decode(comm, null, 0.03, 0.05)
+from emp;
+
+select ename, sal, decode(trunc (sal/100), 0, 'E',1,'D',2, 'C',3,'B','A') 급여등급 
+from emp;
+
+create table score(
+student_no varchar2(20) primary key,
+name varchar2(20) not null,
+kor number default 0,
+eng number default 0,
+mat number default 0
+);
+
+insert into  score values ('1', 'kim', 90, 80, 70);
+insert into score values ('2', 'park', 78,75, 74);
+insert into score values ('3', 'hong', 99, 89, 79);
+insert into score values ('4', 'choi', 100, 100, 100);
+insert into score values ('5', 'choi', 100, 100, 99);
+
+select name, kor, eng, mat, (kor+eng+mat) 총점,
+round ((kor+eng+mat)/3, 2) 평균,
+decode(trunc(((kor+eng+mat)/3)/10), 10, 'A', 9, 'A', 8, 'B', 7, 'C', 6, 'D', 'F') 등급
+from score;
+
+select name, kor, eng, mat, (kor+eng+mat) 총점,
+round ((kor+eng+mat)/3, 2) 평균,
+case when (kor+eng+mat)/3>=90 then 'A'
+when (kor+eng+mat)/3>=80 then 'B'
+when (kor+eng+mat)/3>=70 then 'c'
+when (kor+eng+mat)/3>=60 then 'D'
+else 'F'
+end 등급
+from score;
+--동률순위(8-8-10)
+select deptno, ename, sal, rank() over(order by sal desc) 순위
+from emp;
+--dense_rank() 동률순위 무시(8-8-9)
+select deptno, ename, sal, dense_rank() over (order by sal desc) 순위
+from emp;
+--partition by 그룹별 순위
+select deptno, ename, sal, rank() over(partition by deptno order by sal desc) 순위
+from emp;

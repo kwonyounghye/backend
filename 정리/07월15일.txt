@@ -1,0 +1,14 @@
+
+yum remove java*
+
+yum : centos 패키지 설치 프로그램
+remove : 기존에 설치된 패키지 삭제
+java* : java로 시작하는 모든 패키지
+
+pc : node
+
+hdfs: Hadoop Distributed File System 하둡 분산 파일 시스템
+
+master/namenode
+
+datanode

@@ -1,0 +1,25 @@
+127.0.0.1 localhost
+192.168.32.130 master
+192.168.32.131 slave1
+192.168.32.132 slave2
+
+hdfs-site.xml
+
+rm 디렉토리 삭제  remove
+-r recursive 반복적으로
+-f force 강제적으로
+mkdir make directory 디렉토리 생성
+chown change owner 소유자 변경
+-R 반복적으로
+chmod change mode 권한 변경
+	4 read
+	2 write
+	1 execute
+	사용자/그룹/전체
+	7         7      7
+
+네임노드		데이터노드
+
+hdfs hadoop distributed file system 하둡 분산 파일 시스템
+ls 목록
+

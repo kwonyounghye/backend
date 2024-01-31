@@ -1,0 +1,47 @@
+--Ctrl Enter, F9 현재 쿼리 실행
+--F10 실행계획 보기
+select * from emp where empno=7900;
+select*from emp where ename='박민철';
+--인덱스 추가 create index 인덱스 이름 on 테이블(컬럼)
+create index emp_ename_idx on emp(ename);
+select empno, ename from emp where ename='박민철';
+
+drop index emp_ename_idx;
+
+create table emp3 (
+no number,
+name varchar2(10),
+sal number
+);
+
+declare--선언부
+i number :=1;--1을 i에 저장, 
+name varchar(20) := 'kim';
+sal number :=0;
+begin--실행부
+while i<= 100000 loop--loop 반복문
+if i mod 2 =0 then--i를 2로 나눈 나머지가 0이면
+name := 'kim' || to_char(i);--||연결 연산자, to char(숫자) 숫자를 문자열로
+sal := 300;
+elsif i mod 3 = 0 then
+name := 'park' || to_char(i);
+sal :=400;
+elsif i mod 5 = 0 then
+name := 'hong' || to_char(i);
+sal :=500;
+else 
+name :='shin' || to_char(i);
+sal := 250;
+end if;
+insert into emp3 values (i, name, sal);
+i:= i+1;--카운트 증가
+end loop;
+end;
+/
+
+select count(*) from emp3;
+--index가 없는 상태
+select * from emp3 where name = 'shin691' and sal > 200;
+--인덱스 추가 테이블(컬럼1, 컬럼2) 2개 이상의 컬럼에 복합 인덱스를 만들 수 있음
+create index emp_name_idx on emp3 (name, sal);
+select * from emp3 where name = 'shin691' and sal > 200;

@@ -1,0 +1,35 @@
+SQL - 집합 
+SQL + 프로그래밍 요소(조건문, 반복문)=> PL/SQL
+DBA - DataBase Administrator 데이터베이스 관리자
+
+서비스 확인
+OracleServiceXE - 오라클 서버
+OracleXETNSListener - 오라클 
+
+DDL: Data Definition Language
+	데이터 정의 언어
+
+.bat batch 배치파일 일괄처리
+
+select
+	Connection
+	PreparedStatement
+	ResultSet
+select가 아닌 경우(insert, update, delete)
+	Connection 
+	PreparedStatement
+
+java-오토커밋
+
+create table
+	view
+	procedure
+	user
+	sequence
+	function
+drop table
+	view
+	procedure
+	user
+	sequence
+	function

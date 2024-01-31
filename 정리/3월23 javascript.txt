@@ -1,0 +1,10 @@
+java
+	a==b =>a.equals(b);
+	주소	내용
+
+^ hat 시작
+$ dollar 끝
+
+$(요소).동작()
+$(요소) 선택자, selector
+jQuery(요소)

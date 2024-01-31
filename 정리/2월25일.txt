@@ -1,0 +1,170 @@
+null, 레이아웃을 사용하지 않는 절대좌표로 배치
+BorderLayout : 5개 영역, Center, South, North, East, West
+FlowLayout: 흐르는대로 배치, 왼쪽->오른쪽
+
+import외부기능참조
+import안해도 되는 경우: java.lang패키지  ex.String, System
+awt abstract window toolkit 추상적인 윈도우 개발도구, java+c개발
+swing awt보다 향상된 gui도구
+Frame-awt
+JFrame-swing
+JPanel패널, BorderLayout 1영역 1개 배치
+JPanel에 여러개 배치, JPanel 배치
+컴포넌트- 화면 구성 도구
+컨테이너- JFrame, JPanel
+
+JLabel 입력안됨
+getText() 내용 읽기
+setText(내용) 내용 쓰기
+
+JTextField 입력 가능
+getText() 내용 읽기
+setText(내용) 내용 쓰기
+
+JComboBox
+getSelectedIndex() 선택된 인덱스 0부터//콤보박스에서 선택한 아이템의 인덱스
+getSelectedItem()//선택한 내용: 콘솔에 내용을 띄움
+if(a==b) 정확하지 않음
+if(a.equals(b)) 정확함
+model 모형, 실제 현상을 단순하게 만든 것
+         데이터 변환기
+         콤보박스=텍스트필드+드롭다운리스트
+	텍스트 => 콤보박스 모델 => 콤보박스 아이템에 추가
+이벤트처리
+이벤트소스.이벤트리스너(이벤트핸들러)
+     대상         감시             처리
+button.addActionListener(new ActionEvent() {
+});
+
+인터페이스 - 전체 추상, 코드를 표준화
+interface A {
+	void a();
+	void b();
+}
+추상함수 - 완성되지 않은 함수
+class A{
+	public void a() {}
+	public void b(); 추상함수
+}
+clss B implements A {
+@Overrride 
+	void a() {}
+@Override
+	void b() {}
+}
+
+extends 상속
+class 클래스 extends 상위클래스 {//상속, 코드 재사용
+}
+
+접근권한
+	public 완전 공개
+	protected 상속받는 하위클래스에 공개
+	default 같은 패키지 공개(앞에 아무것도 붙지 않는 것)
+	private 비공개(상속x)
+	
+static 변수, 함수 - 곧바로 사용 가능
+non-static 변수, 함수 - new + 사용 가능
+int a;//instance인스턴스 변수, new로 인스턴스를 만든 후 사용 가능
+static int b;
+void a() {
+System.out.println(a);
+}
+static void b() {
+System.out.println(b);
+}
+public static void main(String[] args) {
+Ex05 e=new Ex05();//인스턴스를 만드는 과정
+System.out.println(e.a);//더 큰 개념.멤버
+System.out.println(a);//(x)
+System.out.println(b);
+e.a();
+//a();
+b();
+
+thread 거미줄
+single thread - 프로그램 작업단위 1개
+multi thread - 프로그램 작업단위 2개 이상
+	장점-빠른 처리속도
+	단점-순서대로 처리되지 않음, 꼬일 수 있음
+
+class A extends Thread{
+	public void run() {
+}
+}
+class A implements Runnable{
+	public void run() {
+}
+}
+	스레드.start(); =>run()
+
+예외처리
+try{	시도할 코드
+} catch(Exception 예외처리 클래스 변수) {//예외를 잡아서 처리
+} finally {//항상 실행되는 코드(close하거나 메모리 정리)
+}=>부분처리
+
+리턴타입 함수이름() throws Exception=>전체처리
+Thread.sleep(1000); 속도 조절//1초
+add throws declaration
+다형성: 상위클래스로 다양한 하위 클래스들을 호출하는 능력
+Exception e=new ArithmeticException();
+Exception e=new NullPointerException();
+유연한 프로그래밍 가능
+엄격한 strict
+toString()l//스트링으로 변환
+
+생성자: 클래스이름과 같은 함수/리턴 타입이 없음/초기 작업들
+class Salary extends JFrame {
+public Salary() {//생성자 constructor
+}
+main {
+new Salary(); 괄호-생성자 호출
+}
+}
+
+setTitle();//프레임의 제목
+EXIT_ON_CLOSE 닫기 버튼
+
+자료형 변수; 1개의 값
+자료형[] 배열참조변수;
+참조변수=new 자료형[개수];
+[]첨자 2개, 1차원/2개 2차원
+자료형[][] 참조변수;
+int [] nums=new int[5];=>크기가 달라지면 수정해야 함
+nums	0	0	0	0	0
+참조변수
+인덱스(기준으로부터의 거리)
+	0	1	2	3	4
+배열의 시작번지값
+배열의 데이터 개수 : 참조변수.length
+참조변수[인덱스]=값;
+nums[0]=10;
+
+배열의 장점: 빠른 처리, 일괄처리
+배열의 단점: 사이즈가 고정, 다양한 자료형x(int만), 추가/삭제의 어려움(뒤에도 같이 땡기거나 밀어야 함)
+컬렉션
+	ArrayList -순서대로 저장, 사이즈 자동으로 증가 
+		size()개수 add()추가 get()읽기
+	HashMap 
+		key, value - key 중복x
+		put("kim", "김철수"); 저장
+		get("kim")
+	HashSet 집합, 순서 중복x 
+
+Random rand=new Random();
+int num=rand.nextlnt(100);
+	0~99=>1~100
+
+ app(native application) - 운영체제에서 실행되는 프로그램
+	운영체제에 종속적, 속도/기능 좋음
+	배포
+web application - 운영체제에 관계없이 잘 호환됨
+	기능이 약함(웹브라우저)
+
+//Ctrl Z 지웠던 거 다시 되돌릴 수있음
+
+new interface => 인스턴스를 만들 수 없음
+
+WindowAdapter 필요한 것만 @Override가능 
+WindowListener 불필요한 부분도 많이 들어감

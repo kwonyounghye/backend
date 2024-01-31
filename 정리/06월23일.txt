@@ -1,0 +1,30 @@
+논리프로세서(동시 연산)
+
+hyper parameter
+하이퍼 파라미터
+
+의사결정나무 - max_depth
+랜덤포레스트 - 트리의 개수 n_estimators
+사례기반추론 - 이웃의 수 k
+인공신경망 
+	epoch, batch_size, hidden layers/nodes, learning rate
+클러스터링 kmeans - 군집의 수 k
+
+모형의 평가 기준
+회귀분석: 오차
+	오차=실제값-예측값
+	mse 평균제곱오차
+	mae 평균절대오차	
+	rmse 평균제곱근오차
+	
+분류
+	정확도
+	classification report
+	ROC curve
+클러스터링
+	실루엣 스코어
+	
+
+클러스터링
+지도학습: 회귀(regression), 분류(classification)
+비지도학습: 군집화(clustering)

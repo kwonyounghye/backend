@@ -1,0 +1,6 @@
+
+StandardScaler
+	평균 0, 표준편차 1
+MinMaxScaler
+	0~1
+

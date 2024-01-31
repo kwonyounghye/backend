@@ -1,0 +1,8 @@
+write=>insert=>
+write=>list
+
+
+file_info 파일 정보
+
+
+multipartfile 파일 업로드

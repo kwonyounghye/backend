@@ -1,0 +1,49 @@
+batch		모든 데이터를 한꺼번에 학습
+mini batch	데이터를 mini batch 단위로 나눠서 학습
+online		샘플 1개씩 학습
+
+
+
+샘플, 변수가 많을수록 메모리 사이즈가 많아서 실패 확률 높음 => 나눠서 학습
+주제 선정
+데이터 수집
+전처리
+	결측값 - SimpleImputer(strategy = mean/median/frequency)
+		정규분포: 평균
+		비정규분포: 중위수
+		범주형: 최빈수
+	원핫인코딩
+	스케일링 - StandardScaler() 평균 0, 표준편차 1
+		MinMaxScaler() 0~1 정규화
+	이상치
+	텍스트 => 숫자
+모델링(데이터 분석)
+	회귀 : 실제 값을 맞춤
+		LinearRegression()
+		coef 기울기
+		p-value 확률, 95% 신뢰수준
+	분류 : 답을 알려주고 0,1 나눔
+		Logit
+		Tree
+		앙상블(ex. RandomForest)
+		KNN 사례기반추론
+		ANN 인공신경망
+		SVM
+	군집화 : 답을 알려주지 않고 나눔
+
+
+
+*프로젝트시 kaggle에서 자료를 받아서 모델링 먼저하고 시간이 되면 전처리하기
+* pycharm에서 회귀분석모델 
+
+계층적 군집화 (2개씩 묶음)
+비계층적 군집화 - KMeans(군집에서 가까운 것들끼리 묶음)
+
+DBSCAN 군집화: 밀도 기반의 군집화
+simple data-> kmeans(->dbscan)
+
+클러스터링 - 비지도학습
+KMeans(클러스터 수 지정)
+계층적 군집화(클러스터 수 지정)
+밀도기반(클러스터 수는 지정하지 않지만 거리와 샘플 수 지정해야 함)
+

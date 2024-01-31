@@ -1,0 +1,87 @@
+public 외부에서 사용 가능
+private 외부에서 사용 금지
+
+class 자바의 기본 단위
+변수(Variable)+함수
+
+{} 중괄호
+
+static 정적인, 시작~끝 항상 메모리
+
+void 비어있는, 돌려주는 값이 없고 실행만
+main 프로그램의 시작 위치
+() 소괄호 - function 함수
+
+println 출력기능
+
+"큰따옴표
+문자열, 스트링
+
+package 패키지 - 디렉토리
+class 클래스 - 자바 자료형
+
+변수의 type(Data Type)
+문자형 : char
+숫자형
+ 정수형 : byte(자료를 전달하는 용도), int(4바이트), long(8바이트)
+ 실수형 : double
+논리형 : boolean true false
+
+int a=10;
+자료형 변수명=값;
+
+integer 정수형
+
+a=b a에 b를 대입
+a==b 같다
+
+문자코드
+A 65
+a 97
+
+1글자 char 'A'작은따옴표
+
+1숫자
+'1'문자
+
+큰따옴표, 문자열
+"hello"
+
+int 1a;(x)
+int a1;(o)
+특수문자는 '_'와 '$'만 허용
+한글 사용 권장하지 않음
+class명 첫글자는 대문자
+
+int_example
+under score 밑줄문자
+ or
+intExample
+
+* 곱하기
+x 문자
+
+문자:작은따옴표
+문자열:큰따옴표
+
+boolean 논리형
+true/false
+참   거짓
+! not, 논리부정
+>크다<작다
+>=크거나 같다
+<=작거나 같다
+
+클래스
+
+변수:변화, ex.확률
+
+상수: 고정
+
+기본자료형
+정수형 int
+실수형 double
+논리형 boolean
+문자형 char 내부적으로 숫자코드가 있음
+
+문자열(스트링)

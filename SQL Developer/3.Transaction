@@ -1,0 +1,18 @@
+create table dep (
+id varchar2(10) primary key,
+name varchar2(15) not null,
+loc varchar2(50)
+);
+drop table dep;
+insert into dep values ('10', '영업팀', '서울');
+savepoint a;--부분적으로 rollback을 하고 싶은 경우 사용
+insert into dep values ('20', '홍보팀', '부산');
+savepoint b;
+insert into dep values ('30', '연구팀', '인천');
+--commit확정, rollback 취소
+select * from dep;
+rollback;--전체 롤백
+rollback to a;
+select * from dep;
+commit;--최근 commit 이후의 변경사항 확정
+select * from dep;

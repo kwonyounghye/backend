@@ -1,0 +1,44 @@
+select deptno, count(*), sum(sal), round(avg(sal)), min(sal), max(sal)
+from emp
+group by deptno--집계기준 필드
+order by deptno;
+
+select 
+e.deptno, dname, count(*), sum(sal), round(avg(sal)), min(sal), max(sal)
+from emp e, dept d--테이블 조인
+where e.deptno = d.deptno--조인 조건
+group by e.deptno,dname--single로 나오지 않기 때문
+order by e.deptno;
+
+select majorno, position, avg(pay)
+from prof
+group by majorno, position--전공코드별, 직급별 집계/group by에 올라간 필드가 select에도 올라가야 함
+order by majorno, position;
+
+select*from stud; 
+
+select m.majorno, mname, count(*)
+from stud s, major m
+where s.majorno = m.majorno
+group by m.majorno, mname;
+
+select s.profno, pname, count(*)
+from stud s, prof p
+where s.profno=p.profno
+group by s.profno,pname;
+
+select majorno, max(pay+nvl(bonus,0)), min(pay+nvl(bonus,0)), avg(pay+nvl(bonus,0))
+from prof
+group by majorno;
+
+select * from emp;
+select count(*), job
+from emp
+group by job;
+
+select*from stud;
+select mname, count(*), grade
+from stud s, major m
+where s.majorno = m.majorno
+group by mname, grade
+order by mname, grade;

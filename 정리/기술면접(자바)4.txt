@@ -1,0 +1,111 @@
+add() 추가
+size() 자료수
+get(인덱스) 조회
+
+객체지향
+	캡슐화
+	상속
+	다형성
+	추상화 - 추상클래스, 인터페이스
+
+스프링의 특징
+	DI - 의존관계 주입
+		@Inject @Autowired
+	IoC - 프로그램의 제어 츠름 구조가 바뀌는 것
+	AOP - 관점지향, 관심지향
+		공통업무, 핵심업무
+
+CSS position
+
+MVC 패턴에서 DAO와 Service의 차이점은?
+Controller => Service => DAO => View
+	Service와 DAO 차이점: 트랜잭션 처리(@Transactional)
+	1 service => 1 dao
+	1 service => many dao
+mybatis에서 resultType과 resultMap 속성의 의미는?
+	레코드의 자료형
+	1. resultType="com.example.spring02.dto.MemberDTO">
+		select*from member
+	2. resultType=dto없이 hashmap으로 가능
+	3. dto는 필요없으나 select tag와 별도로 map에 대해 자세히 작성해야 함 
+
+프로젝트에서 사용한 collection(generic)의 종류와 사용한 이유는?
+List, Map, Set
+List와 배열의 차이점
+	배열 - 사이즈 고정, 같은 자료형
+	Map - 빠른 검색
+
+inner join과 outer join의 차이점?
+	select * from member a, order o
+where a.userid = o.userid;
+
+jquery를 사용하는 이유는?
+ajax 비동기식으로 처리할 수 있다.
+코드 적게 작성, 빠르고 일을 많이함
+document.getElementById("a").value="hello";
+<input id = "a">
+
+tomcat과 servlet의 연관성은?
+apache - tomcat
+web	was
+
+web server : html, js, css만 해석
+web application server(was) : java 컴파일
+
+servlet : 서버에서 실행되는 자바 프로그램
+
+over load : 같은 클래스에서 이름이 같은 함수들
+over ride : 상위자료형의 함수를 재정의(상속관계)
+
+/ 서블릿
+
+web.xml 서버가 올라올 때 제일 먼저 실행
+
+DispatcherServlet : 서블릿 요청이 들어왔을 때 강제로 spring으로 관리
+
+Hadoop : 분산파일 시스템(큰 데이터를 여러 장비에 분산하고 취합함)
+	맵리듀스
+	map
+	reduce : 분산처리된 것을 합치는 작업
+
+네임노드 : 전체작업을 컨트롤
+데이터노드 : 분산작업을 수행
+하둡에코시스템 : spark - 기계학습도 하둡으로 가능
+
+속성변수: 클래스에서만 쓰이는 변수
+
+배열: 사이즈가 고정적
+Java : 객체지향 언어 - 운영체제에 독립적
+
+PHP : 웹개발 전용 언어
+JSP : html페이지에 java 코드, 서버에서 실행(java server pages)
+jquery : 자바스크립트 라이브러리의 일종
+java : 컴파일, 
+javascript : 인터프리터, 클라이언트의 웹브라우저(서버x, 사용자 pc)
+ERP : 전사적 자원 관리 시스템
+
+struts2: spring이 나오기 전에 유행하던 기술
+
+iBatis(mybatis) : ORM - object Relation Mapping
+		자바코드와 sql 분리
+		jdbc 간소화
+hibernate 하이버네이트 
+	sql 작성하지 않음
+
+Spring : 상수(한번 생성한 후 변하지 않음), 빠르게 처리
+Spring buffer
+Spring builder : 스트링을 생성하는 클래스
+트랜잭션의 대상
+DML - Data Manipulation Language 데이터 조작 언어
+insert, update, delete
+commit
+rollback
+
+AJAX(Asynchronouse Javascript And Xml)의 특징: 필요한 정보만 서버로 보냄
+	비동기적인 자바스크립트와 xml
+동기 - 순서대로 실행(single thread)
+비동기 - 동시에 실행(multi thread)
+
+xml(eXtensible Markup Language) 확장가능한 마크업 언어
+json(JavaScript Object Notation) 자바스크립트 객체 표기법
+

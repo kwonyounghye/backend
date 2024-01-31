@@ -1,0 +1,28 @@
+JDBC - Java DataBase Connectivity
+Java - 인터페이스
+DBMS- 구현된 클래스(jar)
+class Path - 컴파일 가능하게 함
+F4: 하위리스트 확인
+네트워크,스레드, DB 예외처리 필수
+
+root계정
+	모든 권한
+	사용자 추가
+	DB 추가
+user 계정
+	제한된 권한
+
+상용 서비스 방법
+	domain 구입
+	서버 운영 방식: 자체 운영(고정ip, 전용선)
+			웹호스팅
+
+
+
+create table names (
+id int,
+name varchar(100),
+year int
+gender char(1),
+count int
+);

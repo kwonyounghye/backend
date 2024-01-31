@@ -1,0 +1,21 @@
+apt - 우분투의  패키지 설치 프로그램
+apt install  패키지이름
+apt install ipenssh-server
+
+
+방화벽 설정
+apt install firewalld
+firewall-cmd --add-port=22/tcp --permanent
+	--permanent 영구적 설정
+	tcp - 연결상태에서 송수신(ex. 전화)/udp - 비연결 상태에서 송수신(ex. 이메일) 
+          방화벽 규칙에 적용
+firewall-cmd --reload
+
+
+
+192.168.85.128
+
+cmd ip
+192.168.1.120
+
+

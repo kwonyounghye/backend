@@ -1,0 +1,46 @@
+변수 1개당 노드 1개
+
+
+hidden layer 많이 쌓이면 딥러닝
+
+활성화 함수:
+계단함수,
+시그모이드 함수,
+tanh 함수(hyperbolic tangent),
+ReLU함수,
+Softmax 함수
+
+sigmoid: 0.0~1.0
+tanh: -1~1
+relu: 0, 1
+softmax: 다분류, 확률값으로 출력
+
+input => hidden => output
+	relu	 회귀분석 - 항등함수
+		 이진분류 - sigmoid(0.0~1.0 곡선)/relu
+		 다분류 - softmax
+		 시계열 - tanh
+
+행렬 곱셈: dot
+
+StandardScaler	평균 0, 표준편차 1
+MinMaxScaler	
+
+입력값 x 가중치(w) + 편향(b) => 출력값 => 실제값 비교
+
+온라인학습 - 샘플 1개씩 학습
+미니배치학습 - 조금씩 학습
+배치학습 - 모든 샘플을 학습
+
+xor: exclusive or 배타적 or
+x	y	and	xor
+0	0	0	0	
+0	1	0	1
+1	0	0	1
+1	1	1	0
+
+SVM
+3차원공간에 올려서 면으로 구분
+선형/비선형
+
+

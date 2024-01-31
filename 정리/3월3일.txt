@@ -1,0 +1,23 @@
+자료형
+char	고정사이즈 문자열
+varchar 	가변사이즈 문자열*
+
+null 	null 허용
+not null 	null 허용 x
+
+primary key 중복되면 안되는 값
+
+sql 자료형
+char	고정 사이즈 문자열
+varchar	가변 사이즈 문자열
+int 	정수형
+float	실수형
+date	날짜형
+datetime	날짜/시간
+default 	기본값
+
+데이터베이스: 테이블의 집합
+테이블: 레코드의 집합
+레코드:  1개의 row(행)
+필드: 레코드의 속성(컬럼)
+primary key: 레코드의 식별자, 중복될 수 없음

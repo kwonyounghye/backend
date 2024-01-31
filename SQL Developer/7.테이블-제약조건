@@ -1,0 +1,81 @@
+create table t_emp (
+id number not null,
+name varchar2(25),
+salary number (7,2),--(전체 7자리, 소수이하2자리)
+phone varchar2(15),
+dept_name varchar2(25)
+);
+--rename A to B: A=>B
+rename t_emp to s_emp;
+--테이블 목록
+select*from tab;
+
+insert into s_emp values(100, '이정민', 3000, '010-2222-3333', '개발팀');
+insert into s_emp values(101, '최순철', 3600, '010-3333-4444', '연구팀');
+insert into s_emp values(102, '장혜숙', 4500, '010-4444-5555', '영업팀');
+--create 생성, drop 삭제, alter 변경
+alter table s_emp add hire_date date;
+--필드 사이즈 변경
+alter table s_emp modify phone varchar2(50);
+alter table s_emp rename column id to t_id;
+--필드=컬럼
+alter TABLE s_emp drop column dept_name;
+
+--desc 테이블: 필드목록표기
+desc t_emp;
+
+alter table s_emp add email number;
+alter table t_emp drop column email;
+alter table s_emp add mailid varchar2(20);
+alter table s_emp modify mailid varchar2(30);
+alter table s_emp rename column mailid to e_mail;
+rename s_emp to t_emp;
+
+create table c_emp (
+id number,
+name varchar2(25),
+salary number,
+phone varchar2(15),
+dept_id number
+);
+drop table c_emp;
+insert into c_emp (id, name) values (1, '김철수');
+insert into c_emp (id, name) values (1, '김기철');
+delete from c_emp;
+select * from c_emp;
+
+alter table c_emp add primary key(id);
+alter table c_emp drop primary key;
+--에러가 났을 때 이름 확인 가능, 제약조건 이름 지정
+alter table c_emp add constraint c_emp_id_pk primary key(id);
+--데이터 사전 확인, 테이블 이름은 대문자로 작성해야 함
+select*from user_constraints where table_name = 'C_EMP';
+insert into c_emp (id, name) values (1, '김철수');
+insert into c_emp (id, name) values (1, '김기철');
+
+drop table c_emp;
+
+create table c_emp (
+id number(5), 
+name varchar2(25), 
+salary number(7,2) constraint c_emp_salary_ck check(salary between 100 and 1000),
+phone varchar2(15),
+dept_id number(7)
+);
+
+insert into c_emp (id, name, salary) values (1, 'kim', 500);
+insert into c_emp (id, name, salary) values (2, 'park', 1500);
+
+create table c_emp (
+id number primary key, 
+name varchar2(25), 
+salary number,
+phone varchar2(15),
+dept_id number,
+foreign key(dept_id) references dept(deptno)
+);
+
+select*from dept;
+insert into c_emp (id, name, dept_id) values (1, 'kim', 10);
+insert into c_emp (id, name, dept_id) values (2, 'park', 20);
+insert into c_emp (id, name, dept_id) values (3, 'park', 50);

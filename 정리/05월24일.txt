@@ -1,0 +1,8 @@
+회귀분석
+	X 연속숫자형 변수
+	y 연속숫자형 변수
+
+분류 classification
+	logit 로지스틱 회귀분석
+군집화 clustering
+

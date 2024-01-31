@@ -1,0 +1,19 @@
+executeQuery 	select 전용 	resultSet(결과가 나옴)
+executeUpdate 	insert, update, delete
+
+select * from emp: select 필드
+delete from emp : 필드가 아니라 레코드 삭제
+
+마우스클릭하면 동작: MouseListener
+
+weekend	
+num.child	distance	
+rides	
+games	
+wait	
+clean	
+overall
+
+mysql -u root -p --local-infile=1
+set global_infile=1;
+LOAD DATA LOCAL INFILE 'c:/data/rides/rides.csv' INTO TABLE rides FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';

@@ -1,0 +1,112 @@
+stream 스트림, 데이터의 흐름, 1byte
+====>OutputStream
+<====InputStream
+
+한글, 2byte
+       3byte=>(국제표준) 
+필수적인 예외 처리: 입출력, 네트워크, 네트워크 관련 작업, DB관련 작업
+
+\r 캐리지 리턴 커서가 앞으로 감
+\n 줄바꿈
+윈도우: 드라이브o
+리눅스: 드라이브x
+
+ascii code 아스키 코드
+ 1글자 1바이트
+uni code 유니코드
+다국어 처리, 2바이트
+
+버퍼를 이용한 방식
+buffer 임시 메모리
+Reader 한글 처리 가능 
+Writer
+Buffered+Reader 버퍼를 사용한 리더
+Buffered+Writer 버퍼를 사용한 라이터
+
+InputStream 바이트 단위(한글 깨짐)
+InputStreamReader 문자 단위
+BufferedReader 버퍼 사용, 한글자씩이 아니라 빠르게 처리 가능
+
+File 클래스
+File의 정보를 참조하는 클래스
+
+isDirectory() => 디렉토리면 true, 아니면 false
+isFile() +> 파일이면 true, 아니면 false
+
+file file 잎사귀
+    directory 가지
+
+? : 3항 연산자
+조건식 ? true일 때의 값 : false일 때의 값
+
+append() 마지막에 추가
+setText() 변경
+
+키보드(InputStream)
+파일(FileInputStream)
+프로그램			데이터 소스
+		str=reader.readLIne() 한 라인을 읽음
+		str !=null str 변수의 내용이 null이 아니면 
+
+바이트 단위 	InputStream		OutputStream
+	파일	FileInputStream(파일 경로) 	FileOutputStream(파일 경로)
+문자 단위 	InputStreamReader		OutputStreamWriter
+	파일 	FileReader 		FileWriter
+버퍼 사용 
+	바이트 	BufferedInputStream	BufferedOutputStream
+	문자	BufferedReader		BufferedWriter
+
+	로컬	원격
+	ip v4
+	ip v6
+	공인ip(public)
+	사설ip(private)
+
+접근권한
+private 비공개
+pritected 비공개, 하위클래스 공개
+default 같은 패키지 공개
+public 공개
+
+URL 인터넷 상의 고유한 주소
+HttpURLConnection: url에 접속하여 연결 생성
+HTTP_OK
+
+
+
+프로토콜(통신규약)
+https://raw.githubusercontent.com/selva86/datasets/master/ozone.csv
+              호스트               
+http: hyper text transfer protocol 하이퍼텍스트를 전달하기 위한 통신 규약
+https: 보안 처리
+URL : url분석
+HttpURLConnection : url에 접속하여 연결 생성
+HTTP_OK
+상태코드
+
+IP 컴퓨터 식별 주소
+mac address
+url
+
+package 디렉토리
+import 안해도 되는 경우: java.lang 패키지, 등
+Buffered 버퍼를 이용한
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

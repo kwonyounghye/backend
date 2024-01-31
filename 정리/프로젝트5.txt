@@ -1,0 +1,20 @@
+(판매자) 시간, 지역, 제목, 설명 등 작성 ->(구매자)리스트->detail-> 
+구매버튼-> 위시리스트이동-> 인원수, 가격, 일정 선택 후 
+
+
+MultipartFile
+
+
+
+CREATE table trip_list (
+#상품코드
+code int not null primary KEY, 
+#상품명
+title VARCHAR(500) not NULL,
+#가격
+price INT DEFAULT 0,
+#여행일정
+time DATETIME
+#지역
+AREA VARCHAR(10)
+);

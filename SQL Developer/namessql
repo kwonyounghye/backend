@@ -1,0 +1,52 @@
+create table names (
+id number,
+name varchar2(50),
+year number,
+gender char(1),
+count number
+);
+
+select count(*) from names;
+select * from names;
+
+select name, gender, sum(count)
+from names
+group by name, gender
+order by sum(count) desc;
+
+select count(name) from names;
+--distinct 중복값 제거
+select count(distinct name) from names;--전체 이름 수
+
+create or replace view names_v
+as
+select *
+from (         
+    select A.*, rownum as rn
+    from (
+        select name, gender, sum(count)
+        from names
+        group by name, gender
+        order by sum(count) desc
+    ) A
+)
+where rn between 1 and 10;
+
+select * from names_v where rn between 11 and 20;
+
+create table titanic (
+PassengerId number primary key,	
+Survived number,
+Pclass number,
+Name varchar2(100),
+Sex varchar2(10),
+Age number,
+SibSp number,	
+Parch number,
+Ticket varchar2(50),
+Fare number,
+Cabin varchar2(50),
+Embarked varchar2(10)
+);
+
+select * from titanic;

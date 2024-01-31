@@ -1,0 +1,1 @@
+mysqldump -u root -p [trip_web] > [trip].sql

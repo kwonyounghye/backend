@@ -1,0 +1,65 @@
+--*모든 필드, count null 제외
+select COUNT(*)from emp;--모든 필드 카운트
+select count(empno) from emp;--특정 필드 카운트
+select count(comm) from emp;--null인 필드를 제외하고 카운트
+
+select SUM(sal) from emp;
+select max(sal) from emp;
+select min(sal) from emp;
+select avg(sal) from emp;
+--round(값, 소수이하자리수)
+select round(avg(sal),1) from emp;
+select COUNT(*), sum(sal), max(sal), min(sal), avg(sal) from emp;
+--sysdate: 시스템의 현재 날짜를 구하는 함수
+--dual: 형식을 맞추기 위한 내용이 없는 테이블, from을 꼭 붙여야 함
+select sysdate from dual;
+--add_months(날짜, 개월수)
+select sysdate, add_months(sysdate, 3) from dual;
+
+select sysdate+100 from dual;
+
+select sysdate-100 from dual;
+
+--to_char(날짜, 문자열) 날짜를 문자열로 변환
+--yyyy 4자리 연도
+--mm 월
+--dd 일
+--am 오전/오후
+--hh 12시간제 hh24 24시간제
+--mi 분
+--ss 초
+--day 요일
+select to_char(sysdate, 'yyyy-mm-dd am hh:mi:ss day') from dual;
+--버림
+select ename, trunc((sysdate-hiredate)/365) 근속연수 from emp;
+--반올림
+select round(10.5555555555, 2) from dual;
+--올림
+select ceil(10.1) from dual;
+--bonus 필드에 null이 있으면 계산이 안됨
+--pay*12 + null
+select pname, pay, bonus, pay*12 + bonus 연봉 
+from prof
+where majorno=101;
+--nvl(A,B) A가 null이면 B
+select pname, pay, bonus, pay*12+nvl(bonus,0) 연봉
+from prof
+where majorno = 101;
+--decode(A,B,C,D) A와 B가 같으면 C, 다르면 D
+select pname, majorno, decode( majorno, 101, '컴퓨터공학') 
+전공명
+from prof;
+
+select*from emp;
+
+select ename, job, sal
+from emp
+where sal>=300;
+
+select ename, trunc(months_between(sysdate, hiredate)) 근무개월수
+from emp
+where months_between(sysdate, hiredate)>=100;
+
+select ename, job, trunc((sysdate-hiredate)/7)총근무주수
+from emp
+order by 총근무주수 desc, ename;

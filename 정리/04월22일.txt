@@ -1,0 +1,9 @@
+mysql이랑 mariadb랑 서비스에서 하나 끄고 하기
+
+
+dto안만들고 hashMap으로 처리 가능
+
+
+
+write->insert->list
+write->list->

@@ -1,0 +1,20 @@
+관계형 데이터베이스
+relational database : RDB
+
+정형 데이터
+비정형 데이터
+
+
+
+
+
+
+
+
+
+
+
+
+몽고DB
+Table => Collection
+Recode => Document

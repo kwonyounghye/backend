@@ -1,0 +1,6 @@
+선형데이터 - 트리
+비선형데이터  - SVM, 신경망
+활성화함수(hidden => output)
+	sigmoid 이진분류 0.0~1.0
+	softmax 다분류
+	linear 회귀

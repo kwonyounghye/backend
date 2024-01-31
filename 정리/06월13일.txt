@@ -1,0 +1,11 @@
+train	test
+80	20
+70	30
+
+신경망
+train	validation		test
+60	20		20
+
+validation
+	하이퍼 파라미터 튜닝
+	조기학습 중지점 설정

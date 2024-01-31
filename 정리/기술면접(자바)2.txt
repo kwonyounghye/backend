@@ -1,0 +1,48 @@
+Framework : spring, mybatis, tensorflow
+	규칙 안에서 쓸 수 있도록 하는 가이드라인
+
+pure java
+
+동적 할당
+	A a = new A();
+	run time
+	heap
+
+정적 할당
+	int a;
+	compile time
+	stack
+
+기본자료형
+	value
+참조자료형 
+	address
+
+EJB
+스트럿츠
+스프링
+
+*의존관계주입(DI)와 제어 역행(IoC) 기술을 통해 애플리케이션의 느슨한 결합
+
+사용클래스 => Member
+제어 역행: 개발자 => 프레임워크
+
+관점지향 프로그래밍(AOP: Aspect(관점, 관심) Oriented Programming)을 위한 풍부한 지원
+핵심기능, 공통기능
+핵심업무, 공통업무
+
+POJO(Plain Old Java Object)
+
+mybatis: 객체와 테이블을 매핑
+	ORM
+	sqlMapConfig.xml - 설정파일
+	mapper - SQL 작성
+	
+hibernate(cf. mongodb)
+
+single thread - 작업단위 1개
+		순서대로 실행
+	Thread 상속
+	.. extends Thread {
+	.. implements Runnable {
+multi thread - 작업단위 여러개

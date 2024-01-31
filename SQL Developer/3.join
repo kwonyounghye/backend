@@ -1,0 +1,83 @@
+select sname, s.majorno, mname
+from stud s, major m--조인할 테이블
+where s.majorno=m.majorno;--조인 조건(공통 컬럼이 필요함)
+
+select empno, ename, dname
+from emp e, dept d
+where e.deptno = d.deptno;
+
+--테이블 3개인 경우 2개씩 연결
+select sname, mname, pname
+from stud s, major m, prof p
+where s.majorno = m.majorno and s.profno = p.profno;
+
+select count(*) from stud;--20명
+--지도교수 미배정 5명은 출력되지 않음
+select sname, pname
+from stud s, prof p
+where s.profno = p.profno;
+
+select sname, pname
+from stud s left outer join prof p--왼쪽 테이블의 모든 자료가 출력됨
+on s.profno = p.profno;
+
+select sname, s.majorno, pname
+from stud s, prof p
+where s.profno = p.profno(+);--자료가 없는 테이블에 (+),oracle에서만 쓰이는 문법
+
+CREATE TABLE PRODUCT(
+product_code varchar2(20) not null primary key,
+product_name varchar2(50) not null,
+price number default 0,
+company varchar2(50),
+make_date date default sysdate
+);
+
+insert into product values ('A1', '아이폰', 90000000, '애플', '2017-03-01');
+insert into product values ('A2', '갤럭시노트', 10000000, '삼성', '2017-08-01');
+insert into product values ('A3', '갤럭시탭', 12000000, '삼성', '2017-10-01');
+
+select*from product;
+
+create table product_sales (
+product_code varchar2(20) not null,
+amount number default 0
+);
+
+insert into product_sales values ('A1', 100);
+insert into product_sales values('A2', 200);
+insert into product_sales values ('A3', 300);
+select*from product_sales;
+
+select p.product_code, product_name, company, price, amount, price*amount money, make_date
+from product p, product_sales s
+where p.product_code = s.product_code;
+
+create or replace view product_v
+as
+select p.product_code, product_name, company, price, amount, price*amount money, make_date
+from product p, product_sales s
+where p.product_code = s.product_code;
+--view를 테이블처럼 사용할 수 있음
+select*from product_v where company='삼성';
+select*from emp;
+
+select ename, dname, sal
+from emp e, dept d
+where e.deptno=d.deptno;
+
+select *from dept;
+select ename, dname
+from emp e, dept d
+where e.deptno=d.deptno
+and job='사원';
+
+select dname
+from emp e, dept d
+where e.deptno=d.deptno
+and ename='손기철';
+
+select (a.ename||'의 매니저는 '||b.ename||'이다')
+from emp a, emp b--a 사원, b 매니저
+where a.mgr=b.empno;
+

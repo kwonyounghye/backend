@@ -1,0 +1,15 @@
+장르
+Animation
+Thriller
+Musical
+Drama
+Adventure
+Action
+Comedy
+Horror
+Biography
+Crime
+Fantasy
+Family
+Mystery
+Sci-Fi

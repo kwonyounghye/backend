@@ -1,0 +1,18 @@
+request : 사용자의 요청을 처리하는 객체
+	서버측
+	폼, 쿼리스트링(스트링)
+request.getParameter("변수")
+request.getParameterValues("배열변수");
+	(모든 자료형)
+request.setAttribute("변수명", 값);
+request.getAttribute("변수명");
+
+url에는 한글, 특수문자 제한
+
+DBCP - DataBase Connection Pool
+	테이터베이스 커넥션 풀
+
+@WebFilter("/*") 모든 url pattern
+/* 	all
+*.do	확장자가 do
+
